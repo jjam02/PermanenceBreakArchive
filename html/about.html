@@ -46,158 +46,118 @@
         </ul>
       </div>
     </nav>
-    <div class="text-center header-container">
+    <div class="text-center header-container m-5">
       <h1 class="display-2 m-5">Requirements</h1>
+      <p class="lead font-weight-normal">Permanence Break is a game made by a four person team for our UCSC CS:GD capstone project for the course CMPM171 Game Design Studio 1. At the beginning of the quarter our team was tasked with creating a vertical slice of our game by the end of winter quarter(a ten week period). The requirements for this project can be found below as well as how we fufilled them in the vertical slice of our game</p>
+    <h1 class="display-1">TODO: <br> INFORMATION ON HOW WE DID THE REQUIREMENTS</h1>
     </div>
     <div class="container-fluid">
       <div class="m-4">
-        <h2>Game Format Requirements</h2>
+        <div >
+          <h1 class="page-title">Game Format Requirements</h1>
 
-        <ul>
-          <li>
-            <strong
-              >The game must be entirely completable while the player's device
-              is disconnected from the internet.</strong
-            >
-            <ul>
-              <li>
-                Games that support entirely offline play are much more likely to
-                remain playable a few years into the future when you want to
-                show your work off to others.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong
-              >The total data transfer involved in downloading the game must be
-              less than 100
-              <a
-                class="inline_disabled external"
-                href="https://simple.wikipedia.org/wiki/Mebibyte"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><span>MiB</span
-                ><span
-                  class="external_link_icon"
-                  style="
-                    margin-inline-start: 5px;
-                    display: inline-block;
-                    text-indent: initial;
-                  "
-                  role="presentation"
-                  ><svg
-                    viewBox="0 0 1920 1920"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="
-                      width: 1em;
-                      height: 1em;
-                      vertical-align: middle;
-                      fill: currentcolor;
-                      --darkreader-inline-fill: currentcolor;
-                    "
-                    data-darkreader-inline-fill=""
-                  >
-                    <path
-                      d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span class="screenreader-only"
-                    >Links to an external site.</span
-                  ></span
-                ></a
-              >.</strong
-            >
-            <ul>
-              <li>
-                Small games are easier to install and keep installed when users
-                may be running out of storage space or trying to limit their
-                total data transfer to save on network costs.
-              </li>
-              <li>
-                Even if you don't feel like your gameplay habits are influenced
-                by file size, consider that file size is used to influence
-                recommendations and search rankings in app stores.
-              </li>
-              <li>
-                Considering cultural phenomena like the
+          <h2>Offline Digital Game</h2>
+          <ul>
+            <li>
+              <strong
+                >The game must be entirely completable while the player's device
+                is disconnected from the internet.</strong
+              >
+              <ul>
+                <li>
+                  Games that support entirely offline play are much more likely
+                  to remain playable a few years into the future when you want
+                  to show your work off to others.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >The total data transfer involved in downloading the game must
+                be less than 100
                 <a
                   class="inline_disabled external"
-                  href="https://en.wikipedia.org/wiki/Demoscene"
+                  href="https://simple.wikipedia.org/wiki/Mebibyte"
                   target="_blank"
                   rel="noreferrer noopener"
-                  ><span>demoscene</span
-                  ><span
-                    class="external_link_icon"
-                    style="
-                      margin-inline-start: 5px;
-                      display: inline-block;
-                      text-indent: initial;
-                    "
-                    role="presentation"
-                    ><svg
-                      viewBox="0 0 1920 1920"
-                      xmlns="http://www.w3.org/2000/svg"
-                      style="
-                        width: 1em;
-                        height: 1em;
-                        vertical-align: middle;
-                        fill: currentcolor;
-                        --darkreader-inline-fill: currentcolor;
-                      "
-                      data-darkreader-inline-fill=""
-                    >
-                      <path
-                        d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <span class="screenreader-only"
+                  ><span>MiB</span
+                  >
+                    <span class="sr-only"
                       >Links to an external site.</span
                     ></span
                   ></a
-                >, file size limitations are a great opportunity for you to show
-                your engineering skill in optimizing a technical system for a
-                specific metric while preserving its key experiential features.
-                (Minimum frame rate or maximum battery usage are other technical
-                metrics you might find ways to cleverly optimize by adjusting
-                our game's design.)
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong
-              >The game may target the platform of the team's choice (e.g.
-              desktop, mobile, console, browser, etc.). However, if Windows is
-              supported macOS must also be supported (at least in principle). If
-              iOS is supported, Android must be supported too (at least in
-              principle [added Feb 6, 2024]).</strong
-            >
-            <ul>
-              <li>
-                In order to improve your access to playtest feedback, your game
-                should not be overly exclusive with respect to platforms at this
-                stage. (You might decide to commit to just a single platform
-                vendor if you continue to work on your game when the course is
-                over. For example, to get your game to rank well on Steam or the
-                Apple App Store, you might need to integrate with
-                vendor-specific APIs.)
-                <em
-                  >Even if your vertical slice at the end of the quarter can
-                  only be demonstrated on a single platform (e.g. just Android),
-                  we should be able to see how delivering it the other platform
-                  (e.g. iOS) is just a matter of paying money, acquiring a
-                  device for testing, and adjusting some build settings (not
-                  replacing large software components in your game).</em
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p>&nbsp;</p>
+                >.</strong
+              >
+              <ul>
+                <li>
+                  Small games are easier to install and keep installed when
+                  users may be running out of storage space or trying to limit
+                  their total data transfer to save on network costs.
+                </li>
+                <li>
+                  Even if you don't feel like your gameplay habits are
+                  influenced by file size, consider that file size is used to
+                  influence recommendations and search rankings in app stores.
+                </li>
+                <li>
+                  Considering cultural phenomena like the
+                  <a
+                    class="inline_disabled external"
+                    href="https://en.wikipedia.org/wiki/Demoscene"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    ><span>demoscene</span
+                    >
+                      <span class="sr-only"
+                        >Links to an external site.</span
+                      ></span
+                    ></a
+                  >, file size limitations are a great opportunity for you to
+                  show your engineering skill in optimizing a technical system
+                  for a specific metric while preserving its key experiential
+                  features. (Minimum frame rate or maximum battery usage are
+                  other technical metrics you might find ways to cleverly
+                  optimize by adjusting our game's design.)
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >The game may target the platform of the team's choice (e.g.
+                desktop, mobile, console, browser, etc.). However, if Windows is
+                supported macOS must also be supported (at least in principle).
+                If iOS is supported, Android must be supported too (at least in
+                principle [added Feb 6, 2024]).</strong
+              >
+              <ul>
+                <li>
+                  In order to improve your access to playtest feedback, your
+                  game should not be overly exclusive with respect to platforms
+                  at this stage. (You might decide to commit to just a single
+                  platform vendor if you continue to work on your game when the
+                  course is over. For example, to get your game to rank well on
+                  Steam or the Apple App Store, you might need to integrate with
+                  vendor-specific APIs.)
+                  <em
+                    >Even if your vertical slice at the end of the quarter can
+                    only be demonstrated on a single platform (e.g. just
+                    Android), we should be able to see how delivering it the
+                    other platform (e.g. iOS) is just a matter of paying money,
+                    acquiring a device for testing, and adjusting some build
+                    settings (not replacing large software components in your
+                    game).</em
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+
+          <p>&nbsp;</p>
+        </div>
       </div>
       <div class="m-4">
-        <div class="show-content user_content clearfix enhanced">
+        <div >
           <h1 class="page-title">Vertical Slice Requirements</h1>
 
           <p>
@@ -241,7 +201,7 @@
         </div>
       </div>
       <div class="m-4">
-        <div class="show-content user_content clearfix enhanced">
+        <div >
           <h1 class="page-title">Localization Requirements</h1>
 
           <p>
@@ -255,32 +215,8 @@
                 target="_blank"
                 rel="noreferrer noopener"
                 ><span>Kanji</span
-                ><span
-                  class="external_link_icon"
-                  style="
-                    margin-inline-start: 5px;
-                    display: inline-block;
-                    text-indent: initial;
-                  "
-                  role="presentation"
-                  ><svg
-                    viewBox="0 0 1920 1920"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="
-                      width: 1em;
-                      height: 1em;
-                      vertical-align: middle;
-                      fill: currentcolor;
-                      --darkreader-inline-fill: currentcolor;
-                    "
-                    data-darkreader-inline-fill=""
-                  >
-                    <path
-                      d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span class="screenreader-only"
+                >
+                  <span class="sr-only"
                     >Links to an external site.</span
                   ></span
                 ></a
@@ -291,32 +227,8 @@
                 target="_blank"
                 rel="noreferrer noopener"
                 ><span>Arabic</span
-                ><span
-                  class="external_link_icon"
-                  style="
-                    margin-inline-start: 5px;
-                    display: inline-block;
-                    text-indent: initial;
-                  "
-                  role="presentation"
-                  ><svg
-                    viewBox="0 0 1920 1920"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="
-                      width: 1em;
-                      height: 1em;
-                      vertical-align: middle;
-                      fill: currentcolor;
-                      --darkreader-inline-fill: currentcolor;
-                    "
-                    data-darkreader-inline-fill=""
-                  >
-                    <path
-                      d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span class="screenreader-only"
+                >
+                  <span class="sr-only"
                     >Links to an external site.</span
                   ></span
                 ></a
@@ -331,17 +243,7 @@
               >.</strong
             >
           </p>
-          <p>
-            While many teams will decide to support English as one of their
-            language, English is not required.
-          </p>
-          <p>
-            Yes, your team can avoid needing to translate text by removing all
-            text from the game. Reducing the amount of on-screen text is often a
-            good strategy generally. Using emoji or other icon-based
-            communication schemes is a nice way to reach wider audiences with
-            relatively little design effort.
-          </p>
+          
           <p>
             Does your game have hand-painted text in images or baked into 3D
             geometry? You'll need to localize that text too.
@@ -359,23 +261,11 @@
             feel like audio access is not critical for gameplay, then you can
             skip subtitles and also skip the requirement to localize them.)
           </p>
-          <p>
-            <strong>Note</strong>: About 50 of the of the 150 students in our
-            CMPM 171 this quarter also took Adam's CMPM 121 (Game Development
-            Patterns) last quarter. Every team in that class delivered a game
-            available in 3+ languages (covering both logographic
-            <em>and</em> right-to-left script). Localization was not a
-            particularly difficult challenge for these teams. Many were able to
-            use a tool like ChatGPT to translate all of the strings (and string
-            templates) in their game in bulk, checking their work by having the
-            system explain grammatical differences to them. Ask around on the
-            CMPM 171 Discord if you need help with this.
-          </p>
         </div>
         <p>&nbsp;</p>
       </div>
       <div class="m-4">
-        <div class="show-content user_content clearfix enhanced">
+        <div >
           <h1 class="page-title">Accessibility Requirements</h1>
 
           <p>
@@ -386,32 +276,8 @@
               target="_blank"
               rel="noreferrer noopener"
               ><span>inclusive design</span
-              ><span
-                class="external_link_icon"
-                style="
-                  margin-inline-start: 5px;
-                  display: inline-block;
-                  text-indent: initial;
-                "
-                role="presentation"
-                ><svg
-                  viewBox="0 0 1920 1920"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="
-                    width: 1em;
-                    height: 1em;
-                    vertical-align: middle;
-                    fill: currentcolor;
-                    --darkreader-inline-fill: currentcolor;
-                  "
-                  data-darkreader-inline-fill=""
-                >
-                  <path
-                    d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                    fill-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="screenreader-only"
+              >
+                <span class="sr-only"
                   >Links to an external site.</span
                 ></span
               ></a
@@ -432,108 +298,7 @@
             Your game must be completable even when simulating vision
             limitations: contrast and color sensitivity.
           </p>
-          <p>Resources:</p>
-          <ul>
-            <li>
-              Configure contrast and color filters in macOS:
-              <a
-                href="https://support.apple.com/lv-lv/guide/mac-help/unac089/mac"
-                target="_blank"
-                class="external"
-                rel="noreferrer noopener"
-                ><span
-                  >https://support.apple.com/lv-lv/guide/mac-help/unac089/mac</span
-                ><span
-                  class="external_link_icon"
-                  style="
-                    margin-inline-start: 5px;
-                    display: inline-block;
-                    text-indent: initial;
-                  "
-                  role="presentation"
-                  ><svg
-                    viewBox="0 0 1920 1920"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="
-                      width: 1em;
-                      height: 1em;
-                      vertical-align: middle;
-                      fill: currentcolor;
-                      --darkreader-inline-fill: currentcolor;
-                    "
-                    data-darkreader-inline-fill=""
-                  >
-                    <path
-                      d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span class="screenreader-only"
-                    >Links to an external site.</span
-                  ></span
-                ></a
-              >
-            </li>
-            <li>Configure contrast and color filters in Windows: TBA</li>
-          </ul>
-          <p>Tips:</p>
-          <ul>
-            <li>
-              Prefer to use brightness over color when distinguishing foreground
-              and background objects.
-            </li>
-            <li>
-              Use continuous motion (e.g. using tween-based repeating
-              animations) to emphasize interactable elements from
-              non-interactable elements.
-            </li>
-            <li>
-              Use animated transitions that reveal the most important visual
-              elements of a scene first so that players can easily identify what
-              needs their attention against a potentially cluttered background.
-            </li>
-            <li>
-              During early development, use simple, flat-colored textures (as in
-              <a
-                class="inline_disabled external"
-                href="https://www.blog.radiator.debacle.us/2017/09/how-to-graybox-blockout-3d-video-game.html"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><span>grayboxing</span
-                ><span
-                  class="external_link_icon"
-                  style="
-                    margin-inline-start: 5px;
-                    display: inline-block;
-                    text-indent: initial;
-                  "
-                  role="presentation"
-                  ><svg
-                    viewBox="0 0 1920 1920"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style="
-                      width: 1em;
-                      height: 1em;
-                      vertical-align: middle;
-                      fill: currentcolor;
-                      --darkreader-inline-fill: currentcolor;
-                    "
-                    data-darkreader-inline-fill=""
-                  >
-                    <path
-                      d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
-                      fill-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span class="screenreader-only"
-                    >Links to an external site.</span
-                  ></span
-                ></a
-              >) to keep the emphasis on the size, position, shape, and motion
-              of objects without getting lost in creating visual details too
-              early.
-            </li>
-          </ul>
+         
           <p><strong>Limited Dexterity (Touching)</strong></p>
           <p>
             Your game must be completable by a player using just one hand on the
@@ -541,7 +306,7 @@
             touchscreen gestures, or multi-key keyboard gestures, but you are
             encouraged to keep the core controls of your game very very simple.
           </p>
-          <p>Resources: TBA</p>
+
           <p><strong>Limited Audition (Hearing)</strong></p>
           <p>
             Your game must be completable by a player who cannot hear any sounds
@@ -551,7 +316,7 @@
             this inclusive design requirement, auditory feedback cannot required
             for the player to complete the game.
           </p>
-          <p>Resources: TBA</p>
+
           <p><strong>Limited Energy and Attention (Resting)</strong></p>
           <p>
             During a completion run of your game, gameplay should always reach a
@@ -561,7 +326,7 @@
             resolve or get to a situation where it is safe to let go of the
             controls quickly.)
           </p>
-          <p>Resources: TBA</p>
+
         </div>
       </div>
     </div>
