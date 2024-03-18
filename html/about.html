@@ -10,7 +10,7 @@
   />
   <link rel="stylesheet" href="../css/styles.css" />
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#">Permanence Break</a>
       <button
         class="navbar-toggler"
@@ -46,6 +46,408 @@
         </ul>
       </div>
     </nav>
-    ABOUT THE GAME PAGE
+    <div class="text-center header-container m-5">
+      <h1 class="display-2 m-5">Requirements</h1>
+      <p class="lead font-weight-normal">Permanence Break is a game made by a four person team for our UCSC CS:GD capstone project for the course CMPM171 Game Design Studio 1. At the beginning of the quarter our team was tasked with creating a vertical slice of our game by the end of winter quarter(a ten week period). The requirements for this project can be found below as well as how we fufilled them in the vertical slice of our game.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="m-4">
+        <div >
+          <h1 class="page-title">Game Format Requirements</h1>
+
+          <h2>Offline Digital Game</h2>
+          <ul>
+            <li>
+              <strong
+                >REQUIREMENT: The game must be entirely completable while the player's device
+                is disconnected from the internet.</strong
+              >
+              <ul>
+                <li>
+                  Our game was centered around being a single player experience with no network 
+                  features.
+                </li>
+                <li>
+                  We also intended to build the game for Windows, meaning once you download the 
+                  game, there's no reliance on an internet browser to run our game.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >REQUIREMENT: The total data transfer involved in downloading the game must
+                be less than 100
+                <a
+                  class="inline_disabled external"
+                  href="https://simple.wikipedia.org/wiki/Mebibyte"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><span>MiB</span
+                  >
+                    <span class="sr-only"
+                      >Links to an external site.</span
+                    ></span
+                  ></a
+                >.</strong
+              >
+              <ul>
+                <li>
+                  We do not use any video files for cutscenes and wanted to 
+                  prioritize gameplay and functionality.
+                </li>
+                <li>
+                  We also opted for the aesthetics of our game to use simple textures 
+                  and <a
+                  class="inline_disabled external"
+                  href="https://en.wikipedia.org/wiki/Cel_shading"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><span>cel shading</span
+                  >
+                    <span class="sr-only"
+                      >Links to an external site.</span
+                    ></span
+                  ></a
+                  > instead of lots of high definition textures.
+                </li>
+                <li>
+                  By optimizing our game around utilizing as few textures as possible, 
+                  and having few levels, we avoided having to worry about size for the 
+                  most part.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong
+                >REQUIREMENT: The game may target the platform of the team's choice (e.g.
+                desktop, mobile, console, browser, etc.). However, if Windows is
+                supported macOS must also be supported (at least in principle).
+                If iOS is supported, Android must be supported too (at least in
+                principle [added Feb 6, 2024]).</strong
+              >
+              <ul>
+                <li>
+                  We made WebGL builds for playtesting purposes, enabling easier playtesting 
+                  and more feedback for us to work off of. 
+                </li>
+                <li>
+                  Our game is also easy to port onto other platforms and is nothing more than 
+                  clicking a few buttons in Unity to build to macOS or Linux. 
+                </li>
+                <li>
+                  Building to WebGL is slightly more complicated, but considering we've done 
+                  it for playtesting purposes, shouldn't be too difficult or time consuming 
+                  to make happen.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+
+          <p>&nbsp;</p>
+        </div>
+      </div>
+      <div class="m-4">
+        <div >
+          <h1 class="page-title">Vertical Slice Requirements</h1>
+
+          <p>
+            <strong
+              >For your game to count as a vertical slice, we should be able to
+              imagine how it would be content-scalable to the full game of your
+              vision without extending the engine, integrating new libraries, or
+              developing new game mechanics.</strong
+            >
+          </p>
+          <h4>What our current Vertical Slice consists of:</h4>
+          <ul>
+            <li>
+              <strong>Aesthetic/Narrative Foundations</strong>
+            </li>
+            <ul>
+              <li>Cel shading</li>
+              <li>Eye iconography on cubes</li>
+              <li>Big red buttons</li>
+              <li>A visual narrative of progressing through white lab rooms</li>
+            </ul>
+            <li>
+              <strong>Splash Experience</strong>
+            </li>
+            <ul>
+              <li>Loading screen with controls prompt on launch (tentative)</li>
+              <li>Menu has a cool parallax background</li>
+            </ul>
+            <li>
+              <strong>Scene Flow</strong>
+            </li>
+            <ul>
+              <li>Menu scene</li>
+              <li>Moving from menu to gameplay</li>
+              <li>Moving from gameplay to menu</li>
+              <li>Moving between level to level</li>
+            </ul>
+            <li>
+              <strong>Core Gameplay</strong>
+            </li>
+            <ul>
+              <li>Player can interact with cubes (picking up and placing down)</li>
+              <li>Player can interact with buttons (through cubes or stepping on them)</li>
+              <li>Player can manipulate cubes' properties (able to trigger properties based on vision)</li>
+              <li>Can complete levels and start new levels</li>
+            </ul>
+            <li>
+              <strong>Deployment</strong>
+            </li>
+            <ul>
+              <li>Our game has been deployed on both WebGL and Windows.</li>
+            </ul>
+          </ul>
+          <h3>Game Concept Expansion</h3>
+          <h4>Upon expanding our game, we plan to add the following:</h4>
+          <ul>
+            <li>
+              <strong>Narratives</strong>
+            </li>
+            <ul>
+              <li>The player - A thief who got a tip about a lab and becomes trapped within it,
+                forced to solve puzzles to both escape and hopefully find what they came for
+              </li>
+            </ul>
+            <li>
+              <strong>Mechanics/Ideas</strong>
+            </li>
+            <ul>
+              <li>
+                A remote to control physics of cubes (can make a cube lose its momentum, or 
+                alternatively, set a cubes velocity)
+              </li>
+              <li>
+                A roguelike mode that allows the players to traverse throughout different lab
+                rooms. This will have a day/night cycle where the player will have to reach a
+                resting room by the time it becomes night.
+              </li>
+            </ul>
+            <li>
+              <strong>Visual/Audio</strong>
+            </li>
+            <ul>
+              <li>Dynamic audio (Ex. Audio changes depending on height a cube falls from)</li>
+              <li>UI being a bit more stylzied (maybe animated)</li>
+            </ul>
+          </ul>
+          <h4>Scaling Localization/Accessibility</h4>
+          <h5>How we plan to scale our current localization and accessibility options:</h5>
+          <ul>
+            <li>
+              <strong>Localization</strong>
+            </li>
+            <ul>
+              <li>
+                We plan on keeping our language use at a minimum, making translation less of a
+                headache. We also plan on allowing user-submitted languages by prompting
+                them to fill out translations in-game.
+              </li>
+            </ul>
+            <li>
+              <strong>Accessibility</strong>
+            </li>
+            <ul>
+              <li>
+                We plan to keep and maintain our current controls and accessibility settings. If
+                we update our controls and add a button, we will also update our one-handed
+                controls. As for other accessibility options, we won’t be changing our design
+                principles for the game too much, so being able to play the game without audio
+                and being able to take breaks will continue to be possible in future versions of our
+                game.
+              </li>
+            </ul>
+          </ul>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+      <div class="m-4">
+        <div >
+          <h1 class="page-title">Localization Requirements</h1>
+
+          <p>
+            <strong
+              >Your game must support players two use two different written
+              languages. At least one language must use either a
+              <em>logographic</em> script (e.g.
+              <a
+                class="inline_disabled external"
+                href="https://en.wikipedia.org/wiki/Kanji"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><span>Kanji</span
+                >
+                  <span class="sr-only"
+                    >Links to an external site.</span
+                  ></span
+                ></a
+              >) or a <em>right-to-left</em> script (e.g.
+              <a
+                class="inline_disabled external"
+                href="https://en.wikipedia.org/wiki/Arabic_script"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><span>Arabic</span
+                >
+                  <span class="sr-only"
+                    >Links to an external site.</span
+                  ></span
+                ></a
+              >).</strong
+            >
+          </p>
+          <ul>
+            <li>
+               <strong>Supported Languages</strong>
+             </li>
+             <ul>
+               <li>English</li>
+               <li>Chinese</li>
+            </ul>
+           </ul>
+           <h3>Language-bearing Assets</h3>
+           <strong>
+            In this section, we enumerate the types of data associated with our game project that contain
+            locale-specific design choices (e.g. text or images of text).
+          </strong>
+          <ul>
+            <li>
+              <strong>Diegetic Assets</strong>
+            </li>
+            <ul>
+              <li>None</li>
+            </ul>
+            <li>
+              <strong>Non-diegetic Assets</strong>
+            </li>
+            <ul>
+              <li>Title of the game</li>
+              <li>Text seen during gameplay</li>
+              <ul>
+                <li>Info text above cubes</li>
+                <li>Movement tutorial text</li>
+              </ul>
+              <li>Text seen during non gameplay scenes</li>
+              <ul>
+                <li>Main Menu</li>
+                <li>Pause Menu</li>
+                <li>Credits Scren</li>
+              </ul>
+              <li>Text in images</li>
+              <ul>
+                <li>Image displaying in-game controls</li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+      <div class="m-4">
+        <div >
+          <h1 class="page-title">Accessibility Requirements</h1>
+
+          <p>
+            In the spirit of
+            <a
+              class="inline_disabled external"
+              href="https://inclusive.microsoft.design/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><span>inclusive design</span
+              >
+                <span class="sr-only"
+                  >Links to an external site.</span
+                ></span
+              ></a
+            >
+            ("solve for one, extend to many"), your games must be completable by
+            players with limited abilities. What it means for a game to be
+            <em>completable</em> or for someone to have a certain
+            <em>ability</em> is largely subjective, so your team should use
+            playtesting to get outside opinions on whether your game satisfies
+            these requirements. For example, your game might be completable by
+            your TA while they simulate the target set of abilities or you might
+            be able to present evidence (e.g. a video recording) that most
+            others are able to feel like they can complete the game under the
+            ability restrictions even the your TA cannot do it themselves.
+          </p>
+          <h4>Limited Vision (Seeing)</h4>
+          <ul>
+            <li>
+              <strong>
+                REQUIREMENT: Your game must be completable even when simulating vision
+                limitations: contrast and color sensitivity.
+              </strong>
+            </li>
+            <ul>
+              <li>
+                No important details are lost from either different colors or grayscaled 
+                colors.
+              </li>
+              <li>Minor details are lost when applying high contrast images.</li>
+            </ul>
+          </ul>
+          <h4>Limited Dexterity (Touching)</h4>
+          <ul>
+            <li>
+              <strong>
+                REQUIREMENT: Your game must be completable by a player using just one hand 
+                on the controls at a time. You may require multi-button mouse, multi-finger
+                touchscreen gestures, or multi-key keyboard gestures, but you are
+                encouraged to keep the core controls of your game very very simple.
+              </strong>
+            </li>
+            <ul>
+              <li>The game is completely playable with just a mouse.</li>
+              <li>The game may prove difficult to play if playing on a trackpad.</li>
+            </ul>
+          </ul>
+          <h4>Limited Audition (Hearing)</h4>
+          <ul>
+            <li>
+              <strong>
+                REQUIREMENT: Your game must be completable by a player who cannot hear any 
+                sounds from the game (e.g. playing the game with system audio muted). 
+                Sonic art is an appreciated aspect of design polish (and it can help
+                reinforce feedback provided by the game's graphics). However, for
+                this inclusive design requirement, auditory feedback cannot required
+                for the player to complete the game.
+              </strong>
+            </li>
+            <ul>
+              <li>The game does not require any sounds to complete.</li>
+              <li>
+                Sounds might aid players in hearing when something is activated, but we have 
+                ensured that players can visually see any changes they made with their environment.
+              </li>
+            </ul>
+          </ul>
+          <h4>Limited Energy and Attention (Resting)</h4>
+          <ul>
+            <li>
+              <strong>
+                REQUIREMENT: During a completion run of your game, gameplay should always 
+                reach a natural resting point within two minutes of active play without 
+                the player needing to take an extra action to pause the game. (The
+                player may still face intense encounters, but they should somehow
+                resolve or get to a situation where it is safe to let go of the
+                controls quickly.)
+              </strong>
+            </li>
+            <ul>
+              <li>
+                The game does not have any time sensitive segments, meaning players can take 
+                a break from their computer at any time.
+              </li>
+              <li>Progress is not lost upon players taking a break from the game without pausing.</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
