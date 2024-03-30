@@ -21,4 +21,10 @@
 
 body {
   background-color: aquamarine;
+  
+}
+
+/* Hide scrollbar for WebKit browsers */
+body::-webkit-scrollbar {
+  display: none;
 }
