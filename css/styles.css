@@ -27,7 +27,7 @@ body {
 
 /* scrollbar styling done with help of chatGPT  */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   background-color: #e0f2f1; /* Light aquamarine background color */
 }
 
@@ -37,9 +37,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #00796b; /* Darker shade of aquamarine when hovered */
+  background-color: #0faf9d; /* Darker shade of aquamarine when hovered */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #b2dfdb; /* Lighter shade of aquamarine */
+  background-color: #88e0d9; /* Lighter shade of aquamarine */
 }
