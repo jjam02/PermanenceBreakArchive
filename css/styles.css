@@ -54,4 +54,5 @@ body {
 
 .discord-img:hover{
   cursor: pointer;
+  fill: #e0f2f1;
 }
