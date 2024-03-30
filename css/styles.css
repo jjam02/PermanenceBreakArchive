@@ -24,7 +24,22 @@ body {
   
 }
 
-/* Hide scrollbar for WebKit browsers */
-body::-webkit-scrollbar {
-  display: none;
+
+/* scrollbar styling done with help of chatGPT  */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #e0f2f1; /* Light aquamarine background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #43d3c4; /* Darker shade of aquamarine */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00796b; /* Darker shade of aquamarine when hovered */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #b2dfdb; /* Lighter shade of aquamarine */
 }
