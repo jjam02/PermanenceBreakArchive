@@ -45,3 +45,13 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #88e0d9; /* Lighter shade of aquamarine */
 }
+
+.discord-img{
+  width:2%;
+  height:2%;
+  
+}
+
+.discord-img:hover{
+  cursor: pointer;
+}
